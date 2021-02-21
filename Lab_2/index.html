@@ -1,0 +1,30 @@
+<html>
+
+<head>
+  <title>Lab_2</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <script type="text/javascript" src="ajax.js"></script>
+  <style type="text/css">
+    .mouseOut {
+      background: white;
+    }
+
+    .mouseOver {
+      background: grey;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <form id="forma" method="GET">
+    <p><strong style="font-size: 24pt">Напишите комментарий</strong><br /></p>
+    <input name="comment" id="comm" />
+    <input type="button" value="Добавить комментарий" onclick="AddComment(comm.value)" />
+    <input type="button" value="Добавить комментарий c задержкой" onclick="AddCommentWithSleep(comm.value)" />
+    <div class="comment_top">Комментарии: </div>
+    <div id="searchresults">
+    </div>
+  </form>
+</body>
+
+</html>
