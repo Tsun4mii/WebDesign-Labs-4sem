@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Lab 4</title>
+  <style>
+  div {
+    position: absolute;
+    background-color: #3366CC;
+    top: 35px;
+    width: 90px;
+    height: 90px;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+ 
+<button id="start">&gt;</button>
+<button id="stop">stop</button>
+
+<div class="block"></div>
+ 
+<script>
+var stop=0;
+
+$( "#stop" ).click(function() { i = 0; });
+
+$( "#start" ).click(function() {
+  var move = 100000;
+  for(var i = 0; i <= move;i++)
+  {
+  if(stop = 0){i = move}
+  $( ".block" ).animate({ "left": "+=50px" }, "slow" );
+  $( ".block" ).animate({ "top": "+=50px" }, "slow" );
+  }
+});
+ 
+</script>
+ 
+</body>
+</html>

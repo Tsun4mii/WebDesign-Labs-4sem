@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Lab 4</title>
+  <style>
+  div {
+    position: absolute;
+    background-color: rgb(29, 243, 154);
+    top: 35px;
+    width: 90px;
+    height: 40px;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+ 
+<button id="start">Start</button>
+<button id="stop">Stop</button>
+<div class="block"></div>
+ 
+<script>
+$( "#start" ).click(function() {
+  $( ".block" ).animate({ "left": "+=70px", "top":"+=50px" }, "normal", false);
+  $( ".block" ).animate({ "left": "+=70px", "top":"-=50px" }, "normal", arguments.callee, false);
+});
+ 
+$( "#stop" ).click(function(){
+  $( ".block" ).stop(true);
+});
+</script>
+ 
+</body>
+</html>
