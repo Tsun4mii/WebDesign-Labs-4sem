@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
+    
+    <title>Document</title>
+    <style>
+        div{width: 200px; height:30px;}
+    </style>
+</head>
+<body>
+    <script type="text/javascript">
+        jQuery(document).ready(function()
+        {
+            jQuery('#one').click(function()
+            {
+                jQuery(this).load('one.html');
+            })
+        });
+        jQuery(document).ready(function()
+        {
+            jQuery('#two').mouseover(function()
+            {
+                jQuery(this).load('two.html');
+            })
+        });
+        jQuery(document).ready(function()
+        {
+            jQuery('#three').mouseout(function(){
+                jQuery(this).load('three.html');
+            })
+        });
+        jQuery(document).ready(function()
+        {
+            jQuery('#four').dblclick(function()
+            {
+                jQuery(this).load('four.html');
+            })
+        });
+     </script>        
+    <div class="test" id="one">Click to update</div>
+    <div class="test" id="two">Click to update</div>
+    <div class="test" id="three">Click to update</div>
+    <div class="test" id="four">Click to update</div>
+</body>
+</html>
