@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var numbers = [1,2,3,4,5];
+	    var b_numbers = [];
+	    var d_numbers = [];
+	    for (var i = 0; i < numbers.length; i++) {
+		    b_numbers.push(numbers[i].toString(2));
+	    }
+	    for (var i = 0; i < b_numbers.length; i++) {
+		d_numbers.push(parseInt(b_numbers[i], 2));
+	}
+	console.log(numbers);
+	console.log(b_numbers);
+	console.log(d_numbers);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
