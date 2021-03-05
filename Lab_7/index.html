@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let xmlContent = '';
+        fetch('titles.xml').then((response) => {
+            response.text().then((xml) => {
+                xmlContent = xml;
+                let parser = new DOMParser();
+                let xmlDOM = parser.parseFromString(xmlContent, 'application/xml');
+                let titles = xmlDOM.querySelectorAll('title');
+
+                //titles.forEach(titleXmlNode => {
+                  //  console.log(titleXmlNode.innerHTML);
+                //});
+                console.log(titles[5].innerHTML);
+                console.log(titles[6].innerHTML);
+                console.log(titles[7].innerHTML);  
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+</head>
+
+<body onload="JSONStringify()">
+  <section>
+  </section>
+
+  <script>
+    const section = document.querySelector('section');
+
+    function JSONStringify() {
+
+      var address = { town: "New York", street: "Wall Street", house: 34, window: window };
+
+      //JSON.stringify(address);  
+
+      console.log(JSON.stringify(address, ["town", "street", "house"]));
+
+      var str = JSON.stringify(address, function (key, value) {
+        if (key == 'window') return undefined; 
+        return value;
+      });
+      console.log(str);
+
+      printAddress(JSON.parse(str));
+    }
+
+    function printAddress(address) {
+      const article = document.createElement('article');
+
+      const H2 = document.createElement('h2');
+      const p1 = document.createElement('p');
+      const p2 = document.createElement('p');
+      H2.textContent = address.town;
+      p1.textContent = "Street: " + address.street;
+      p2.textContent = "House: " + address.house;
+
+      article.appendChild(H2);
+      article.appendChild(p1);
+      article.appendChild(p2);
+
+      section.appendChild(article);
+    }
+  </script>
+</body>
+
+</html>

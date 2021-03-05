@@ -1,0 +1,13 @@
+E:\2nd course\WEB\Lab_10\Lab_10\bin\Debug\netcoreapp3.1\Lab_10.exe
+E:\2nd course\WEB\Lab_10\Lab_10\bin\Debug\netcoreapp3.1\Lab_10.deps.json
+E:\2nd course\WEB\Lab_10\Lab_10\bin\Debug\netcoreapp3.1\Lab_10.runtimeconfig.json
+E:\2nd course\WEB\Lab_10\Lab_10\bin\Debug\netcoreapp3.1\Lab_10.runtimeconfig.dev.json
+E:\2nd course\WEB\Lab_10\Lab_10\bin\Debug\netcoreapp3.1\Lab_10.dll
+E:\2nd course\WEB\Lab_10\Lab_10\bin\Debug\netcoreapp3.1\Lab_10.pdb
+E:\2nd course\WEB\Lab_10\Lab_10\obj\Debug\netcoreapp3.1\Lab_10.csprojAssemblyReference.cache
+E:\2nd course\WEB\Lab_10\Lab_10\obj\Debug\netcoreapp3.1\Lab_10.AssemblyInfoInputs.cache
+E:\2nd course\WEB\Lab_10\Lab_10\obj\Debug\netcoreapp3.1\Lab_10.AssemblyInfo.cs
+E:\2nd course\WEB\Lab_10\Lab_10\obj\Debug\netcoreapp3.1\Lab_10.csproj.CoreCompileInputs.cache
+E:\2nd course\WEB\Lab_10\Lab_10\obj\Debug\netcoreapp3.1\Lab_10.dll
+E:\2nd course\WEB\Lab_10\Lab_10\obj\Debug\netcoreapp3.1\Lab_10.pdb
+E:\2nd course\WEB\Lab_10\Lab_10\obj\Debug\netcoreapp3.1\Lab_10.genruntimeconfig.cache
